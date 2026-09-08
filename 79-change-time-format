@@ -1,3 +1,17 @@
 public String changeTimeFormat(String strTime) {
-    //code here
+  List<String> horaCompleta = strTime.split(':');
+        Integer hora = Integer.valueOf(horaCompleta[0]);
+        String minutos = horaCompleta[1];
+        
+        String periodo = (hora >= 12) ? 'PM' : 'AM';
+
+        if (hora == 0) {
+            hora = 12;
+        } else if (hora > 12) {
+            hora = hora - 12;
+        }   
+
+        String horaTexto = (hora < 10) ? '0' + String.valueOf(hora) : String.valueOf(hora);
+
+        return horaTexto + ':' + minutos + ' ' + periodo;
 }
