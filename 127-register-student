@@ -6,6 +6,6 @@ public String registerStudent(String name, String phone, String email) {
    
 
     insert registroEstudiante;
-    return registroEstudiante;
+    return registroEstudiante.apxio__Registration_Number__c;
     
 }
