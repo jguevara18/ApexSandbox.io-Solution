@@ -1,5 +1,5 @@
 public String registerStudent(String name, String phone, String email) {
-    apxio__Student__c registroEstudiante = new apxio__Student__c ();
+    apxio__Student__c registroEstudiante = new apxio__Student__c();
     registroEstudiante.name = name;
     registroEstudiante.apxio__Phone__c = phone;
     registroEstudiante.apxio__Email__c = email;
