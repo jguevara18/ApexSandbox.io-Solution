@@ -5,9 +5,9 @@ public Id insertCourse(String name, String details, Integer credits) {
     NuevoCurso.apxio__Credits__c = string.valueOf(credits);
     
 
-    //if (credits == null){
-     //   return null;
-   // }
+    if (credits == null && credits == ''){
+       return null;
+   }
 
     insert NuevoCurso;
     return NuevoCurso.id;
