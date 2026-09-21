@@ -7,7 +7,7 @@ public Id insertCourse(String name, String details, Integer credits) {
 
     if (credits == null){
         return null;
-    };
+    }
 
     insert NuevoCurso;
     return NuevoCurso.id;
