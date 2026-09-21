@@ -6,7 +6,7 @@ public Id insertCourse(String name, String details, Integer credits) {
     credits = string.valueOf(credits);
 
     if credits == null{
-        return null
+        return null;
     }
 
     insert NuevoCurso;
