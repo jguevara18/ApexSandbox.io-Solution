@@ -3,7 +3,7 @@ public String registerStudent(String name, String phone, String email) {
     registroEstudiante.name = name;
     registroEstudiante.apxio__Phone__c = phone;
     registroEstudiante.apxio__Email__c = email;
-    registroEstudiante..apxio__Registration_Number__c;
+    registroEstudiante.apxio__Registration_Number__c;
 
     insert registroEstudiante;
     return registroEstudiante.apxio__Registration_Number__c;
