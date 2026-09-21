@@ -3,9 +3,13 @@ public String registerStudent(String name, String phone, String email) {
     registroEstudiante.name = name;
     registroEstudiante.apxio__Phone__c = phone;
     registroEstudiante.apxio__Email__c = email;
-    registroEstudiante.apxio__Registration_Number__c;
+    
 
     insert registroEstudiante;
-    return registroEstudiante.apxio__Registration_Number__c;
-    
+     apxio__Student__c estudianteInsertado = [
+        SELECT apxio__Registration_Number__c 
+        FROM apxio__Student__c 
+        WHERE Id = :registroEstudiante.Id
+    ];
+    return estudianteInsertado.apxio__Registration_Number__c;
 }
