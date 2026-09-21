@@ -1,4 +1,4 @@
 public List<apxio__Student__c> selectActiveStudents() {
-List<apxio__Student__c> students = new List<apxio__Student__c>()
+List<apxio__Student__c> students = new List<apxio__Student__c>();
   students = [select id, name from apxio__Student__c where apxio__Student__c.apxio__Active__c = true] 
 }
