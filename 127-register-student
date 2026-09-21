@@ -3,9 +3,8 @@ public String registerStudent(String name, String phone, String email) {
     registroEstudiante.name = name;
     registroEstudiante.apxio__Phone__c = phone;
     registroEstudiante.apxio__Email__c = email;
-    registroEstudiante.apxio__Registration_Number__c = Registration Number;
+   
 
     insert registroEstudiante;
-    List<apxio__Student__c> students = [SELECT Id, Name, apxio__Phone__c, apxio__Email__c, apxio__Registration_Number__c FROM apxio__Student__c];
-    return students;
+    
 }
