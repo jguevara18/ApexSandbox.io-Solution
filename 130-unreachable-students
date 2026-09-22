@@ -1,0 +1,6 @@
+public List<apxio__Student__c> selectUnreachableStudents() {
+    list<apxio__Student__c> ListaOrdenada = new list<apxio__Student__c>();
+    ListaOrdenada = [select id, name from apxio__Student__c where apxio__Student__c.apxio__Active__c ==true
+    and (apxio__Student__c.apxio__Email__c == true Or apxio__Student__c.apxio__Phone__c == true) Orderby name desc ];
+    return ListaOrdenada;
+}
