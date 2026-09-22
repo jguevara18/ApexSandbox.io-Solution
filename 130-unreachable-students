@@ -1,8 +1,11 @@
 public List<apxio__Student__c> selectUnreachableStudents() {
 
-    
+    apxio__Student__c estudiantesNuevos = new apxio__Student__c();
+    estudiantesNuevos.name = name;
+    estudiantesNuevos.apxio__Active__c= active;
+    estudiantesNuevos.apxio__Email__c = email;
+    estudiantesNuevos.apxio__Student__c.apxio__Phone__c = phone;
 
+    insert estudiantesNuevos;
     
-    return  [select id, name from apxio__Student__c where apxio__Active__c =true and apxio__Student__c.apxio__Phone__c = null and apxio__Student__c.apxio__Phone__c = null  Orderby name asc ];
-  
-}
+   return  [select id, name from apxio__Student__c where apxio__Active__c =true and apxio__Student__c.apxio__Phone__c = null and apxio__Student__c.apxio__Phone__c = null  Orderby name asc ];
