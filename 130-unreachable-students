@@ -8,6 +8,6 @@ public List<apxio__Student__c> selectUnreachableStudents() {
 
     insert estudiantesNuevos;
     list<apxio__Student__c> ListaOrdenada = new list<apxio__Student__c>();
-    ListaOrdenada = [select id, name from apxio__Student__c where apxio__Student__c.apxio__Active__c ==true Orderby name desc ];
+    ListaOrdenada = [select id, name from apxio__Student__c where apxio__Active__c =true Orderby name desc ];
     return ListaOrdenada;
 }
