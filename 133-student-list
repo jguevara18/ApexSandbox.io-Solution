@@ -1,10 +1,13 @@
 public void insertStudents(List<String> studentNames, List<String> studentEmails) {
-    list<apxio__Student__c> listaEstudiantes = new list <apxio__Student__c>();
+   // list<apxio__Student__c> listaEstudiantes = new list <apxio__Student__c>();
 
-    listaEstudiantes.add(studentNames) = name;
-    listaEstudiantes.add(studentEmails) = email;
+    //listaEstudiantes.add(studentNames) = name;
+    //listaEstudiantes.add(studentEmails) = email;
 
-    insert listaEstudiantes;
+    //insert listaEstudiantes;
+
+    List<String> names = new List<String>();
+    names.add(studentNames) = name;
 
 
 }
