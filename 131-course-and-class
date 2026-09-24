@@ -1,0 +1,8 @@
+public void createCourseAndClass(String name, String description) {
+    list<apxio__Course__c> crearCurso = new list <apxio__Course__c>();
+    crearCurso.name = name;
+    crearCurso.description = description;
+
+    insert crearCurso;
+    
+}
