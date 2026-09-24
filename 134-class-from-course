@@ -4,8 +4,9 @@ public Id classFromCourse(String courseName) {
     nombreCurso.name = courseName;
 
     insert nombreCurso;
+    return nombreCurso.id;
 
-    
+
 
 
 }
