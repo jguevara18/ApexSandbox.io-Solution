@@ -1,13 +1,24 @@
 public void insertStudents(List<String> studentNames, List<String> studentEmails) {
-   // list<apxio__Student__c> listaEstudiantes = new list <apxio__Student__c>();
+   list<apxio__Student__c> listaEstudiantes = new list <apxio__Student__c>();
 
-    //listaEstudiantes.add(studentNames) = name;
-    //listaEstudiantes.add(studentEmails) = email;
 
-    //insert listaEstudiantes;
+   for(integer i = 0; i < studentNames.size(); i++){
+       apxio__Student__c estudiante = new apxio__Student__c();
+        estudiante.name = studentNames[i];
+        estudiante.apxio__Email__c = studentEmails[i];
 
-    List<String> names = new List<String>();
-    names.add(studentNames) = name;
+        listaEstudiantes.add(estudiante);
+   }
+
+   if(!listaEstudiantes.isEmpty()){
+        insert listaEstudiantes;   
+   }
+
+   
+
+    
+
+    
 
 
 }
