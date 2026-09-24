@@ -4,5 +4,14 @@ public void createCourseAndClass(String name, String description) {
     crearCurso.apxio__Course_Details__c = description;
 
     insert crearCurso;
+
+    string descripRecortada = (description != null) ? description.left(255): null;
+
+
+    apxio__Class__c crearClase = new apxio__Class__c();
+    crearClase.name = name;
+    crearClase.apxio__Description__c = descripRecortada;
+    crearClase.apxio__Course__c = crearCurso.id;
+    insert crearClase;
     
 }
