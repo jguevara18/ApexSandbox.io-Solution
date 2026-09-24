@@ -3,7 +3,7 @@ public Id classFromCourse(String courseName) {
 
     nombreCurso.name = courseName;
 
-    insert nombreCurso;
+    update nombreCurso;
     return nombreCurso.id;
 
 
