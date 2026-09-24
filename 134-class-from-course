@@ -1,0 +1,11 @@
+public Id classFromCourse(String courseName) {
+    apxio__Course__c nombreCurso = new apxio__Course__c();
+
+    nombreCurso.name = courseName;
+
+    insert nombreCurso;
+
+    
+
+
+}
