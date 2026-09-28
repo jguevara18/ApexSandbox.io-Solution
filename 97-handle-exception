@@ -6,5 +6,6 @@ public String divide(Integer a, Integer b){
         }catch (Exception e){
        String descriptionError = e.getMessage();
        System.debug(descriptionError); 
+       return descriptionError;
         }
 }
