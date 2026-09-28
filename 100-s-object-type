@@ -1,7 +1,7 @@
 public Boolean isTypeAccount(sObject record)
 {
-account acc = new Account();
-  if(record instanceOf account.acc){
+account acc = new Account(record);
+  if(record instanceOf acc){
       return true;
   }
 }
