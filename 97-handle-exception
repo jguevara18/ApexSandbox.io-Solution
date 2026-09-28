@@ -2,9 +2,9 @@ public String divide(Integer a, Integer b){
     try{
         
         return String.valueOf(a/b);
-        
+
         }catch (Exception e){
        String descriptionError = e.getMessage();
        System.debug(descriptionError); 
-    {
+        }
 }
