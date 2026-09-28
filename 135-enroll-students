@@ -13,6 +13,6 @@ public void enrollStudents(List<String> emails, String className) {
     }
 
     if(!inscripciones.isEmpty()){
-        insert  estudiantes;
+        insert  inscripciones;
     }
 }
