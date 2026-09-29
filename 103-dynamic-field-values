@@ -5,5 +5,5 @@ public List<String> getFieldsValue(Account acc, List<String> fields)
     for(String campo: fields){
         result.add(acc.get(campo));
     }
-    returt result;
+    return result;
 }
