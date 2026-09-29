@@ -1,14 +1,16 @@
 public Boolean duplicateContacts(Contact c1, Contact c2) {
 
-    if (c1 != null && c2 != null){
-        if((c1.email == c2.email) && (c1.phone == c2.phone)){
-            return true;    
-        }else{
-        return false;
-    
-    }
-    }else{
+    if (c1 == null || c2 == null) {
         return false;
     }
+
+    // Comprobar coincidencia en Email (asegurando que no sea nulo/blanco)
+    Boolean sameEmail = String.isNotBlank(c1.Email) && c1.Email == c2.Email;
+
+    // Comprobar coincidencia en Phone (asegurando que no sea nulo/blanco)
+    Boolean samePhone = String.isNotBlank(c1.Phone) && c1.Phone == c2.Phone;
+
+    // Retornar true si coincide el Email O el Phone
+    return sameEmail || samePhone;
     
 }
