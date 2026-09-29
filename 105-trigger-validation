@@ -1,0 +1,10 @@
+public void validateInsert(List<Opportunity> opportunities){
+   if (opportunities != null) {
+        for (Opportunity opp : opportunities) {
+            // Verificar si la etapa es 'Closed Won' y la descripción está vacía
+            if (opp.StageName == 'Closed Won' && String.isBlank(opp.Description)) {
+                opp.Description.addError('Description should not be empty for Closed Won opportunity.');
+            }
+        }
+    }
+}
