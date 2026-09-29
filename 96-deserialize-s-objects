@@ -1,8 +1,9 @@
 public List<Account> getAccountsFromJSONString(String inputJSON){
-    if(inputJSON != null){
-        List<Account> accountList = new List<Account> (JSON.deserialize(inputJSON));
-       return accountList;  
+    if(String.isNotBlank(inputJSON)){
+        return List<Account> accountList = (List<Account>) JSON.deserialize(inputJSON, List<Account>.class);
+       
     }
+    return null;
      
    
 }
