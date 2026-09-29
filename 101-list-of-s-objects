@@ -1,7 +1,12 @@
 public List<sObject> getListOfsObject(List<Account> accounts, List<Contact> contacts)
 {
     list<sObject> nuevaLista = new list<sObject>();
-    nuevaLista.addall(accounts);
-    nuevaLista.addall(contacts);
+    if(accounts !=null){
+      nuevaLista.addall(accounts);  
+    }
+    if(contacts !=null){
+      nuevaLista.addall(contacts);  
+    }
+    
     return nuevaLista;
 }
