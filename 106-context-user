@@ -3,6 +3,6 @@ public Map<String,String> getContextUserInformation(){
     usuario.put('Email', UserInfo.getUserEmail());
     usuario.put('Profile', UserInfo.getProfileId());
     usuario.put('Type', UserInfo.getUserType());
-    usuario.put('Name', UserInfo.getUserName());
+    usuario.put('UserName', UserInfo.getUserName());
     return usuario;
 }
