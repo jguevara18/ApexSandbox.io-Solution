@@ -3,6 +3,6 @@ public List<Account> getAccountsFromJSONString(String inputJSON){
         List<Account> accountList = (List<Account>) JSON.deserialize(inputJSON, List<Account>.class);
        return accountList;  
     }
-     return accountList; 
+     
    
 }
