@@ -1,5 +1,5 @@
 public Boolean sameParent(Account acc, Contact con, Opportunity opp) {
-    if((acc.Id.isNotBlank() && con.AccountId.isNotBlank() && opp.AccountId.isNotBlank()) && acc.Id == con.AccountId == opp.AccountId ){
+    if((acc.Id != null && con.AccountId != null && opp.AccountId != null) && acc.Id == con.AccountId == opp.AccountId ){
         return true;
     }
     return false;
