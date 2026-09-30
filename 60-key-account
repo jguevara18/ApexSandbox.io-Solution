@@ -4,6 +4,7 @@ public Boolean isKeyAccount(Account a) {
     }
     if(a.AnnualRevenue >= 2000000){
         a.Industry = 'Retail';
+        return true;
 
     }
 }
