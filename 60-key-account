@@ -2,5 +2,19 @@ public Boolean isKeyAccount(Account a) {
     if(a.AnnualRevenue == null || a == null){
         return false;
     }
+    Decimal threshold = 500000;
+
+    switch on a.Industry {
+        when 'Banking'{
+            threshold = 600000;
+        }
+        when 'Technology'{
+            threshold = 800000;
+        }
+        when 'Retail'{
+            threshold = 2000000;
+        }
+    }
+    return a.AnnualRevenue >= threshold;
     
 }
