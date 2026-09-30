@@ -1,10 +1,6 @@
 public Boolean isKeyAccount(Account a) {
-    if(a.AnnualRevenue == null || a.Industry == null){
+    if(a.AnnualRevenue == null || a == null){
         return false;
     }
-    if(a.AnnualRevenue >= 2000000){
-        a.Industry = 'Retail';
-        return true;
-
-    }
+    
 }
