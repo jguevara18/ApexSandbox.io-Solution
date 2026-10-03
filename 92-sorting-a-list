@@ -5,7 +5,7 @@ public List<String> getNamesInAscOrder(List<String> accountNames)
     return accountNames;    
         
     }else{
-       return false;
+       return new List<String>(); 
     }
 
     
