@@ -3,9 +3,12 @@ public Integer findTargetCount(List<Integer> nums, Integer target) {
         return 0;
     }
 Integer count == 0;
-    if(num == target){
-        count++;
+    for( Integer num: nums){
+        if(num == target){
+        count++;    
+    
     }
     return count;
 
+}
 }
