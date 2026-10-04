@@ -1,10 +1,11 @@
 public static Integer findLast(List<Integer> nums, Integer target) {
-   Integer numero = 0;
-   for( Integer num : nums){
-       if(nums == null || target == null || nums.isEmpty()){
+     if(nums == null || target == null || nums.isEmpty()){
            return null;
 
        }
+   Integer numero = 0;
+   for( Integer num : nums){
+      
        if(num == target){
            return numero++;
        }else{
