@@ -3,7 +3,7 @@ public List<Integer> evenNumbers(Integer n) {
 
     if( n>0) {
         pares.add(n*2);
-        return pares;
+        return pares.sort();
     }else{
         return null;
     }
