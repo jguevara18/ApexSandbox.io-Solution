@@ -7,7 +7,7 @@ public static Integer findLast(List<Integer> nums, Integer target) {
    for( Integer num : nums){
       
        if(num == target){
-           return numero++;
+           numero++;
        }else{
            return -1;
        }
