@@ -1,7 +1,7 @@
 public static Integer findLast(List<Integer> nums, Integer target) {
    Integer numero = 0;
    for( Integer num : nums){
-       if(num == null || target == null || num.isEmpty()){
+       if(nums == null || target == null || nums.isEmpty()){
            return null;
 
        }
@@ -12,5 +12,5 @@ public static Integer findLast(List<Integer> nums, Integer target) {
        }
    }
 
-   return numero[numero.size()-1];
+   return numero.get(numero.size()-1);
 }
