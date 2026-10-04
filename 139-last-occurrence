@@ -1,17 +1,16 @@
 public static Integer findLast(List<Integer> nums, Integer target) {
      if(nums == null || target == null || nums.isEmpty()){
-           return null;
-
-       }
-   Integer numero = 0;
-   for( Integer num : nums){
-      
-       if(num == target){
-           numero++;
-       }else{
            return -1;
-       }
-   }
 
-   return numero[numero.size()-1];
+       }
+   Integer ultimoIndice = -1;
+   for( Integer i = 0; i< nums.size(); i++){
+      if(nums[i] == target){
+          ultimoIndice = i;
+      }
+      
+   }
+   return ultimoIndice;
+
+   
 }
