@@ -1,7 +1,6 @@
 public static Integer findLast(List<Integer> nums, Integer target) {
-   
+   Integer numero = 0;
    for( Integer num : nums){
-       Integer numero = 0;
        if(nums == null || target == null || nums.isEmpty()){
            return 0;
 
