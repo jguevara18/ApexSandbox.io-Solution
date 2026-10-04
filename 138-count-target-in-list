@@ -7,10 +7,11 @@ public Integer findTargetCount(List<Integer> nums, Integer target) {
         return 0;
     }
     if(num == target){
-        return count++;    
+        count++;    
     
     }
-    return;
+    
 
 }
+return count;
 }
