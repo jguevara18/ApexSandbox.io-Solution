@@ -8,7 +8,7 @@ public Integer findTargetCount(List<Integer> nums, Integer target) {
             count++;    
     
     }
-    return count;
+    return count > 1 ? count - 1 : 0;
 
 }
 }
