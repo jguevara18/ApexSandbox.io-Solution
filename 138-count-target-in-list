@@ -1,0 +1,11 @@
+public Integer findTargetCount(List<Integer> nums, Integer target) {
+    if(nums == null || nums.isEmpty() || target == null){
+        return 0;
+    }
+Integer count == 0;
+    if(num == target){
+        count++;
+    }
+    return count;
+
+}
