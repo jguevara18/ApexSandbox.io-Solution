@@ -1,6 +1,6 @@
 public List<Integer> positiveIntegers(List<Integer> numbers) {
     if(numbers == null || numbers.isEmpty()){
-        return null;
+        return 0;
     }
     list<Integer> positives = new list<Integer>();
 
