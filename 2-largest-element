@@ -1,0 +1,11 @@
+public static Integer findLargest(List<Integer> nums) {
+if(nums == null || nums.isEmpty){
+    return 0;
+}
+Integer numero = 0;
+list<Integer> total = new list<Integer>();
+for(Integer i =0; i < nums.size(); i++){
+    total.add[i];
+}
+	
+}
