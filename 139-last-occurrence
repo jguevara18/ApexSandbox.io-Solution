@@ -12,5 +12,5 @@ public static Integer findLast(List<Integer> nums, Integer target) {
        }
    }
 
-   return numero.get(numero.size()-1);
+   return numero.get(nums.size()-1);
 }
