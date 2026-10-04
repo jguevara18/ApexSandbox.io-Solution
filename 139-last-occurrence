@@ -2,7 +2,7 @@ public static Integer findLast(List<Integer> nums, Integer target) {
    Integer numero = 0;
    for( Integer num : nums){
        if(nums == null || target == null || nums.isEmpty()){
-           return 0;
+           return null;
 
        }
        if(num == target){
