@@ -1,0 +1,10 @@
+public List<Integer> evenNumbers(Integer n) {
+    List<Integer> pares = new  List<Integer>();
+
+    if( n>0) {
+        pares.add(n*2);
+        return pares;
+    }else{
+        return null;
+    }
+}
