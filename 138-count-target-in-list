@@ -1,9 +1,9 @@
 public Integer findTargetCount(List<Integer> nums, Integer target) {
-    if(nums == null || nums.isEmpty() || target == null){
+    if (nums == null || nums.isEmpty() || target == null){
         return 0;
     }
     Integer count = 0;
-    for( Integer num: nums){
+    for( Integer num : nums){
         if(num == target){
             count++;    
     
