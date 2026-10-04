@@ -1,5 +1,5 @@
 public static Integer findLargest(List<Integer> nums) {
-if(nums == null || nums.isEmpty){
+if(nums == null || nums.isEmpty()){
     return 0;
 }
 //Integer numero = 0;
