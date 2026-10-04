@@ -1,11 +1,15 @@
 public List<Integer> evenNumbers(Integer n) {
-    List<Integer> pares = new  List<Integer>();
+    List<Integer> pares = new List<Integer>();
 
-    if( n>0) {
-        pares.add(n*2);
-        return pares;
-    }else{
-        return null;
+    // 1. Validar que n sea un número positivo mayor a cero
+    if (n == null || n <= 0) {
+        return pares; // O return null según las pruebas de Apex Sandbox
     }
-    return pares.sort();
+
+    // 2. Bucle que empieza en 2, avanza de 2 en 2 y termina en n * 2
+    for (Integer i = 2; i <= n * 2; i += 2) {
+        pares.add(i);
+    }
+
+    return pares;
 }
