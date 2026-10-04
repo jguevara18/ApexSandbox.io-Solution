@@ -1,0 +1,13 @@
+public List<Integer> positiveIntegers(List<Integer> numbers) {
+    if(numbers == null || numbers.isEmpty()){
+        return null;
+    }
+    list<Integer> positives = new list<Integer>();
+
+    for(Integer numPositivos : numbers){
+        if (numPositivos > 0){
+            positives.add(numPositivos);
+        }
+    }
+    return positives;
+}
