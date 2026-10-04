@@ -7,6 +7,8 @@ public List<Integer> positiveIntegers(List<Integer> numbers) {
     for(Integer numPositivos : numbers){
         if (numPositivos > 0){
             positives.add(numPositivos);
+        }else{
+            return null;
         }
     }
     return positives;
