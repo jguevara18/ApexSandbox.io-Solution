@@ -4,7 +4,7 @@ public Integer maxConsecutiveOnes(Integer[] numbers) {
     }
     Integer count = 0;
     for(Integer i; i<numbers.size(); i++){
-        if(numbers[i]= 1){
+        if(numbers[i]> 1){
             count++;
         }else{
             return 0;
